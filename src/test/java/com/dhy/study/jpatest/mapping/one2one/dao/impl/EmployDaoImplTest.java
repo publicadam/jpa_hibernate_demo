@@ -1,7 +1,9 @@
 package com.dhy.study.jpatest.mapping.one2one.dao.impl;
 
+import com.dhy.study.jpatest.entities.Dept;
+import com.dhy.study.jpatest.entities.Employ;
+import com.dhy.study.jpatest.entities.ParkingSpace;
 import com.dhy.study.jpatest.mapping.one2one.dao.EmployDao;
-import com.dhy.study.jpatest.mapping.one2one.entities.Employ;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +26,18 @@ public class EmployDaoImplTest {
     public void testAddEmploy(){
         Employ e = new Employ();
         e.setName("adam");
-        e.setAge(27);
+        e.setComments("级联测试");
+        e.setSalary(12000);
+
+        Dept dept = new Dept();
+        dept.setName("IT");
+
+        ParkingSpace space = new ParkingSpace();
+        space.setLocation("tianjin road");
+        space.setLot(15);
+
+        e.setDept(dept);
+        e.setParkingSpace(space);
         employDao.save(e);
         System.out.println(e.getId());
     }
