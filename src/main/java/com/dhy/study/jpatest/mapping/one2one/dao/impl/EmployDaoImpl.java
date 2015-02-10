@@ -1,7 +1,7 @@
-package com.dhy.study.jpatest.dao.impl;
+package com.dhy.study.jpatest.mapping.one2one.dao.impl;
 
-import com.dhy.study.jpatest.dao.EmployDao;
-import com.dhy.study.jpatest.entities.Employ;
+import com.dhy.study.jpatest.mapping.one2one.dao.EmployDao;
+import com.dhy.study.jpatest.mapping.one2one.entities.Employ;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

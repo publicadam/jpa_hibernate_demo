@@ -7,7 +7,7 @@
                             http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
                             http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-    <context:component-scan base-package="com.dhy.study.jpatest.dao" />
+    <context:component-scan base-package="com.dhy.study.jpatest.mapping.one2one.dao" />
     <context:property-placeholder location="classpath:jdbc.properties"/>
 
 

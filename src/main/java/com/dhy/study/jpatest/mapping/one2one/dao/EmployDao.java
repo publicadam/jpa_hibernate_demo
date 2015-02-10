@@ -1,6 +1,6 @@
-package com.dhy.study.jpatest.dao;
+package com.dhy.study.jpatest.mapping.one2one.dao;
 
-import com.dhy.study.jpatest.entities.Employ;
+import com.dhy.study.jpatest.mapping.one2one.entities.Employ;
 
 /**
  * Created by Administrator on 2015/2/9.

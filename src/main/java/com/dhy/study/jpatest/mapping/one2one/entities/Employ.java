@@ -1,4 +1,4 @@
-package com.dhy.study.jpatest.entities;
+package com.dhy.study.jpatest.mapping.one2one.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
